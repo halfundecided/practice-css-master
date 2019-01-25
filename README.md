@@ -1,5 +1,5 @@
 # CSS Master
-:Flexbox, Grid, PostCSS, CSSNext
+Flexbox, Grid, PostCSS, CSSNext
 
 ### CSS Flex
 

@@ -7,11 +7,11 @@
        .container {
            display: grid;
            grid-auto-rows: 100px;
-           grid-gap: 5px;
+           grid-gap: 10px;
            /* fill up the empty spaces */
-           grid-auto-flow: row dense;
+           grid-auto-flow: dense;
            /* Naming Lines */
-           grid-template-columns: [first-line] 1fr [awesome-line] 1fr [mijeong-line] 1fr [hello-line] 1fr
+           grid-template-columns: repeat(5, 1fr);
 
        }
        .item {
@@ -27,11 +27,11 @@
             background-color:orangered;
         }
         .item:first-child{
-            /* grid-column-start: 1; */
-            /* all the way: when you don't know how many columns you have there */
-            /* grid-column-end: -1; */
-            grid-column-start: awesome-line;
-            grid-column-end: hello-line;
+            /* stratch verically */
+            /* grid-row-start: 2; */
+            /* grid-row-end: 5; */
+            grid-row: span 4;
+            grid-column: span 3;
         }
     </style>
   </head> 

@@ -4,12 +4,22 @@
     <meta charset="utf-8">
     <title>CSS Grid</title>
     <style>
-        .container {
+        /*CSS Grid Basics*/
+        /* .container {
             display: grid;
             grid-template-columns: 30px 50px;
             grid-template-rows: 30px 12px;
             grid-gap: 5px;
-        }
+        } */
+       .container {
+            display: grid;
+            grid-template-columns: 300px 500px;
+            grid-template-rows: 300px 120px;
+            grid-gap: 5px;
+            /* grid-auto-rows: 60px; */
+            grid-auto-columns: 60px;
+            grid-auto-flow: column;
+       } 
 
         .item {
             background-color: lightcoral;
@@ -19,6 +29,9 @@
   <body>
 
     <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>

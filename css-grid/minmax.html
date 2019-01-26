@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Grid</title>
+    <style>
+       .container {
+           display: grid;
+           grid-auto-rows: 200px;
+           grid-gap: 5px;
+           /* first column: minimum 400px and maximum 2fr */
+           grid-template-columns: minmax(400px, 2fr) repeat(3,1fr);
+           /* grid-template-columns: max-content repeat(3, 1fr); */
+           /* grid-template-columns: min-content repeat(3, 1fr); */
+           
+       }
+
+        .first {
+            background-color: lightcoral;
+        }
+
+        .second {
+            background-color:aquamarine;
+        }
+
+        .third {
+            background-color:cornflowerblue;
+        }
+
+        .fourth {
+            background-color:darkgrey;
+        }
+
+    </style>
+  </head> 
+  <body>
+
+    <div class="container">
+        <div class="first">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quo perspiciatis ea non pariatur fugiat! Nihil voluptates consequuntur fugiat dignissimos voluptate laudantium omnis corrupti minus ratione, recusandae tempora corporis. Possimus.</div>
+        <div class="second"></div>
+        <div class="third"></div>
+        <div class="fourth"></div>
+    </div>
+
+  </body>
+</html>

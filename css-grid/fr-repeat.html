@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Grid</title>
+    <style>
+       .container {
+           display: grid;
+           grid-auto-rows: 200px;
+           grid-gap: 5px;
+           /* first col, second col, third col, fourth col */
+           /* grid-template-columns: 2fr 1fr 2fr 1fr;  */
+           /* repeat 3 times with 1fr and 3fr for fourth column */
+           grid-template-columns: repeat(3,1fr) 3fr;
+       }
+
+        .first {
+            background-color: lightcoral;
+        }
+
+        .second {
+            background-color:aquamarine;
+        }
+
+        .third {
+            background-color:cornflowerblue;
+        }
+
+        .fourth {
+            background-color:darkgrey;
+        }
+
+    </style>
+  </head> 
+  <body>
+
+    <div class="container">
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+        <div class="fourth"></div>
+    </div>
+
+  </body>
+</html>

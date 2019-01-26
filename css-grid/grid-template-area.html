@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Grid</title>
+    <style>
+       .container {
+           display: grid;
+           grid-auto-rows: 200px;
+           grid-gap: 5px;
+           grid-template-areas: "header header header"
+                                "content content sidebar"
+                                "content content sidebar"
+                                "footer footer footer";
+
+       }
+
+        .first {
+            grid-area: header;
+            background-color: lightcoral;
+        }
+
+        .second {
+            grid-area: sidebar;
+            background-color:aquamarine;
+        }
+
+        .third {
+            grid-area: footer;
+            background-color:cornflowerblue;
+        }
+
+        .fourth {
+            grid-area: content;
+            background-color:darkgrey;
+        }
+
+    </style>
+  </head> 
+  <body>
+
+    <div class="container">
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+        <div class="fourth"></div>
+    </div>
+
+  </body>
+</html>

@@ -10,13 +10,11 @@
            grid-gap: 5px;
            grid-template-columns: repeat(5, 100px);
            color: whilte;
-           /* Moving my grid all of it together */
-           /* justify-content: center; */
-           /* align-content: center; */
-           /* first argument: justify-content(horizontally), second column: align=content(vertically) */
-           place-content: center end;
+           /* justify-items: center; */
+           /* align-items: center; */
+           place-items: center center;
            height: 100vh;
-           /* place-content는 박스 전체를 움직임 */
+           /* place-item 은 box안에있는 content를 움직임 */
        }
 
         .item:nth-child(even) {

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Grid</title>
+    <style>
+       .container {
+           display: grid;
+           grid-auto-rows: 100px;
+           grid-gap: 5px;
+           /* Useful when we don't know how many things there will be */
+           /* grid-template-columns: repeat(auto-fit, 350px); */
+           /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
+           grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+
+       }
+
+        .item:nth-child(even) {
+            background-color: lightcoral;
+        }
+        .item:nth-child(odd){
+            background-color:orangered;
+        }
+    </style>
+  </head> 
+  <body>
+
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+  </body>
+</html>
